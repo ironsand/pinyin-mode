@@ -22,6 +22,7 @@
       (and (re-search-backward (pinyin-regex))
            (replace-match (aref (pinyin-find-chars (match-string 0) pinyin-chars-list) type))))))
 
+
 (defun pinyin-make-tone-0 () (interactive) (pinyin-make-tone 0))
 (defun pinyin-make-tone-1 () (interactive) (pinyin-make-tone 1))
 (defun pinyin-make-tone-2 () (interactive) (pinyin-make-tone 2))
@@ -32,6 +33,7 @@
   "Input pinyin"
   :lighter " PinYin"
   :keymap (let ((map (make-sparse-keymap)))
+            (define-key map (kbd "0") 'make-tone-0)
             (define-key map (kbd "1") 'make-tone-1)
             (define-key map (kbd "2") 'make-tone-2)
             (define-key map (kbd "3") 'make-tone-3)
