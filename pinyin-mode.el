@@ -33,9 +33,18 @@
   "Input pinyin"
   :lighter " PinYin"
   :keymap (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "0") 'make-tone-0)
-            (define-key map (kbd "1") 'make-tone-1)
-            (define-key map (kbd "2") 'make-tone-2)
-            (define-key map (kbd "3") 'make-tone-3)
-            (define-key map (kbd "4") 'make-tone-4)
+            (define-key map (kbd "0") 'pinyin-make-tone-0)
+            (define-key map (kbd "1") 'pinyin-make-tone-1)
+            (define-key map (kbd "2") 'pinyin-make-tone-2)
+            (define-key map (kbd "3") 'pinyin-make-tone-3)
+            (define-key map (kbd "4") 'pinyin-make-tone-4)
             map))
+
+
+
+
+
+
+
+
+
