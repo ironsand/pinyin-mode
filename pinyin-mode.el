@@ -1,6 +1,6 @@
 ;;; pinyin-mode.el --- input mode for pinyin
-;;
-;; Version: $Id: pinyin.el, v 0.0 2018/02/12 $
+
+;; Version: 0.0.1
 ;; last updated : 2018-02-12
 (require 'thingatpt)
 (setq pinyin-chars-list '(["a" "ā" "á" "ǎ" "à"]
