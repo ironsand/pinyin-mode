@@ -1,4 +1,4 @@
-;;; pinyin.el --- input mode for pinyin
+;;; pinyin-mode.el --- input mode for pinyin
 ;;
 ;; Version: $Id: pinyin.el, v 0.0 2018/02/12 $
 ;; last updated : 2018-02-12
