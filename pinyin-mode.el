@@ -44,11 +44,4 @@
             (define-key map (kbd "4") 'pinyin-make-tone-4)
             map))
 
-
-
-
-
-
-
-
-
+;;; pinyin-mode.el ends here
