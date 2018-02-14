@@ -47,7 +47,7 @@
             (define-key map (kbd "2") 'pinyin-make-tone-2)
             (define-key map (kbd "3") 'pinyin-make-tone-3)
             (define-key map (kbd "4") 'pinyin-make-tone-4)
-            (define-key map (kbd "4") 'pinyin-make-tone-5)
+            (define-key map (kbd "５") 'pinyin-make-tone-5)
             map))
 
 ;;; pinyin-mode.el ends here
