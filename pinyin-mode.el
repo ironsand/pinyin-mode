@@ -3,11 +3,14 @@
 ;; Version: 0.0.1
 ;; last updated : 2018-02-12
 (require 'thingatpt)
-(setq pinyin-chars-list '(["a" "ā" "á" "ǎ" "à"]
-                          ["e" "ē" "é" "ě" "è"]
+(setq pinyin-chars-list '(["a" "ā" "á" "ǎ" "à" "â"]
+                          ["e" "ē" "é" "ě" "è" "ê"]
                           ["o" "ō" "ó" "ǒ" "ò"]
-                          ["i" "ī" "í" "ǐ" "ì"]
-                          ["u" "ū" "ú" "ǔ" "ù"]))
+                          ["i" "ī" "í" "ǐ" "ì" "î"]
+                          ["u" "ū" "ú" "ǔ" "ù"]
+                          ["ü" "ǖ" "ǘ" "ǚ" "ǜ"]
+
+))
 
 (defun pinyin-regex ()
   (concat "[" (mapconcat #'(lambda (chars)
@@ -32,6 +35,8 @@
 (defun pinyin-make-tone-2 () (interactive) (pinyin-make-tone 2))
 (defun pinyin-make-tone-3 () (interactive) (pinyin-make-tone 3))
 (defun pinyin-make-tone-4 () (interactive) (pinyin-make-tone 4))
+(defun pinyin-make-tone-5 () (interactive) (pinyin-make-tone 5))
+
 
 (define-minor-mode pinyin-mode
   "Input pinyin"
@@ -42,6 +47,7 @@
             (define-key map (kbd "2") 'pinyin-make-tone-2)
             (define-key map (kbd "3") 'pinyin-make-tone-3)
             (define-key map (kbd "4") 'pinyin-make-tone-4)
+            (define-key map (kbd "4") 'pinyin-make-tone-5)
             map))
 
 ;;; pinyin-mode.el ends here
